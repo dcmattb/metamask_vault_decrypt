@@ -7,12 +7,14 @@
 Obtain the Vault file from the Browser Extension in following location:
 
 1. Firefox
-`moz-extension://UUID/home.html`
-(right click) inspect element
+   
+	`moz-extension://UUID/home.html`
+	(right click) inspect element
 	```
 	chrome.storage.local.get('data', result=> {var vault=result.data.KeyringController.vault; console.log(vault)})
 	```
-2. Chrome
+3. Chrome
+   
 	In an explorer window:
 	```
 	%LocalAppData%\\Google\\Chrome\\UserData\\Default\\Local Extension Settings\\nkbihfbeogaeaoehlefnkodbefgpgknn
